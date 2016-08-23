@@ -1,0 +1,12 @@
+<p>Login page</p>
+<div ng-controller="loginCtl">
+
+<form name="loginForm" ng-submit="login()">
+    User Account:<br>
+    <input type="text" ng-model="username" id="username" placeholder="Username" required><br>
+    Password:<br>
+    <input type="password" ng-model="password" id="password" placeholder="Password" required><br>
+    <input type="submit" value="Login">
+    <a href="#/register">Register Page</a>
+</form>
+</div>

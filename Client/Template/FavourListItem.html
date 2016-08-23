@@ -1,0 +1,26 @@
+
+<div ng-controller="favListItemCtl">
+    <h1>Favourite Item Details</h1>
+    <h3>Title: {{item.title}}</h3>
+    
+
+    <input type=text ng-model="rid" hidden>
+    <h3>Recipe Details</h3>
+
+    <img src="{{item.image_url}}" height="150">
+
+    <h3>Ingredients</h3>
+    <ul>
+        <li ng-repeat="ingredient in item.ingredients">{{ingredient}}</li>
+    </ul>
+
+    <h3>Directions:</h3>
+    <p><a href="{{item.source_url}}" target="_blank">Click me read more!</a></p><br>
+    
+    NOTE:<br>
+    <textarea ng-model="note" rows="8" cols="50"></textarea><br><br>
+    <input type="button" value="Save" ng-click="updateFavourListItem()"><br><br>
+    <input type="button" value="Delete favourite item" ng-click="delFavourListItem()">
+
+</div>
+

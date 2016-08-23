@@ -1,0 +1,20 @@
+<html ng-app="myRecipe">
+    <head>
+        <title>Recipes</title>
+        <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+        <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-route.js"></script>
+        <script src="js/user.js"></script>
+        <script src="js/recipe.js"></script>
+        <script src="js/favourList.js"></script>
+    </head>
+
+    <body>
+        <ul>
+            <li><a href="#/login">Login</a></li>
+            <li><a href="#/register">Register</a></li>
+            <li><a href="#/search">Search</a></li>
+            <li><a href="#/favourList">Favourite List</a></li>
+        </ul>
+        <div ng-view></div>
+    </body>
+</html>

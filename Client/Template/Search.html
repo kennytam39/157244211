@@ -1,0 +1,15 @@
+
+<div ng-controller="searchCtl">
+    <p>Search Recipe</p>
+    <form ng-submit="search(para)">
+        <input type="text" ng-model="para.keyword" placeholder="Search keyword">
+        <input type="submit">
+    </form>
+    <table>
+        <tr><th>Search Result</th></tr>
+        <tr ng-repeat="recipe in recipes">
+            <td><a href="#/recipeDetails?id={{recipe.id}}">{{recipe.title}}</a></td>
+            <td><img src="{{recipe.image_url}}" height="100"></td>
+        </tr>
+    </table>
+</div>

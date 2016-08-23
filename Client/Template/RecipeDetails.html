@@ -1,0 +1,14 @@
+ 
+<div ng-controller="recipeDetailsCtl">
+    <p>Recipe Details</p>
+    Title: {{data.title}}<br><br>
+    <img src="{{data.image_url}}" height="150">
+    <h3>Ingredients</h3>
+    <ul>
+        <li ng-repeat="ingredient in data.ingredients">{{ingredient}}</li>
+    </ul>
+    <h3>Directions:</h3>
+    
+    <p><a href="{{data.source_url}}" target="_blank">Click me read more!</a></p><br>
+    <input type="button" value="add to favourite list" ng-click="addFavList()"><br>
+</div>
