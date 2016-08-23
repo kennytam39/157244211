@@ -39,7 +39,6 @@ server.get("/favourList/:id", getFavourList);
 server.del("/favourList/:id", delFavourList);
 server.put("/favourList/:id", updateFavourList);
 
-
 // insert new user
 function createUser(req, res, next) {
     if (req.body == undefined) {//process empty request
