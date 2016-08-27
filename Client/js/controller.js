@@ -5,6 +5,9 @@ var serverUrl = "https://assignment-kennytam.c9users.io/";//rest server url
 var myRecipe = angular.module("myRecipe", ["ngRoute"]);
 myRecipe.config(function ($routeProvider) {
     $routeProvider
+    .when("/mainPage", {
+                templateUrl: "Template/Main.html"
+            })
             .when("/login", {
                 templateUrl: "Template/Login.html"
             })

@@ -1,0 +1,337 @@
+*{
+margin:0;
+padding:0;
+}
+html{
+height:100%;
+margin-bottom:1px;
+}
+body{
+background: url('../pic/background2.jpg') fixed center center;
+background-repeat:   no-repeat;
+background-size:     cover;
+margin:0em 0;
+padding:0;
+color: #000000;   
+background-color:#ffffff;   /*      change color =background color for outside area */
+}
+
+a {
+color: #000000;            /*      change color =font color for menu area       */
+text-decoration: none;
+}
+a:hover {
+text-decoration: underline;
+}
+img {
+border:none;
+}
+h1,h2,h3,h4,h5,h6,p,blockquote,ul,ol,dl,fieldset,address{
+margin:0.5em 0;
+}
+fieldset{
+padding:.5em;
+border:none;
+}
+ul, ol {
+margin-left: 2em;
+}
+h1,.componentheading{
+font-size:1.2em;
+font-family: Georgia
+line-height:1.7em;
+font-weight:bold;
+}
+h2,.contentheading{
+/*color: #724289;*/
+font-family: Georgia;
+font-size:1.0em;
+line-height:1.1em;
+font-weight:bold;
+}
+h3{
+font-size:1.1em;
+line-height:1.3em;
+}
+h4{
+font-size:1.0em;
+line-height:1.2em;
+}
+h5{
+font-size:1.1em;
+line-height:1.1em;
+}
+h6{
+font-size:1em;
+line-height:1em;
+font-weight:bold;
+}
+.small,.createdate,.modifydate,.mosimage_caption{
+font:0.8em Arial,Helvetica,sans-serif;
+color:#999;
+}
+/*Layout*/
+.clr {
+clear: both;
+}
+.inside {
+padding: 0px;
+color: #000000;            /*      change color =font color for inside area       */
+/*background-color:#ffffff;         change color =background color for inside area */
+}
+
+.inside2 {
+padding: 0px;
+}
+
+.inside3 {
+padding: -5px;
+}
+
+.hidden {
+position:absolute; 
+left:0px; top:-500px; 
+width:1px; 
+height:1px; 
+overflow:hidden;
+}
+
+#wrapper{
+width:945px;           /* CMS Width */
+margin:0 auto;
+/*background: url(../images/header_old.png) repeat-x top #ffffff;*/
+
+}
+#header {
+margin: 0px
+}
+#header .inside {
+padding: 3px 0px;
+color: #000000;            /*      change color =font color for inside area       */
+/*background-color:#ffffff;         change color =background color for inside area */
+}
+#navigation {
+float: right;
+text-align: right;
+color: #000000;            /*      change color =font color for inside area       */
+}
+#navigation ul {
+margin: 0px;
+padding: 0px;
+list-style-type: none;
+}
+#navigation li {
+margin: 0px;
+padding: 0px;
+display: inline;
+list-style-type: none;
+}
+
+#jp-advert {
+background: #666666;
+height: 150px !important;    
+margin-bottom: 10px;
+
+
+}
+#jp-advert .inside {
+padding: 0px 0px;
+height: 100px !important; 
+}
+#jp1-advert {
+float: left;
+}
+/* ------------search module----------------------------*/
+#login {
+float: left;
+font-size:11px;
+font-family:Verdana;
+background: #333;
+margin-left: 10px;
+padding: 5px !important;
+width: 200px !important;
+height: 200px !important;
+}
+
+#container {
+position:relative;
+top:20px;
+}
+#mainbody {
+float: left;
+width: 100%;
+color: #000000;            /*      change color =font color for inside area       */
+/*background-color:#ffffff;         change color =background color for inside area */
+}
+#content {     
+float: left;
+width: 80%;      /* user1 banner position , control left-right position */
+margin-left: 0px;
+}
+#top {
+margin-bottom: 10px;
+}
+#jp-left {
+float: left;
+width: 150px;               /* width of left menu    */
+margin-right: 5px;
+margin-left: 15px;
+}
+/* ------------right module----------------------------*/
+#jp-right {
+float: right;
+width: 190px;
+margin-left: 5px;
+padding: 7px !important;
+border-left: 1px solid #ccc ;
+
+}
+#jp-footer {
+font:0.8em Arial,Helvetica,sans-serif;
+magin-top: 10px !important;
+}
+#copy {
+float: left;
+}
+#link {
+float: right;
+}
+
+
+#jp-bottom {
+text-align: center;
+margin-top: 5px;
+/*color: #cccccc;*/
+}
+
+#message {
+margin-bottom: 0px;
+}
+/* System Messages */
+#system-message    {
+margin-bottom: 0px;
+padding: 0;
+}
+#system-message dt { 
+font-weight: bold; 
+}
+#system-message dd { 
+margin: 0; font-weight: bold; text-indent: 30px; 
+}
+#system-message dd ul {
+color: #0055BB;
+list-style: none;
+margin: 0px;
+padding: 10px;
+background: #D8E5F8 url(../images/status-info.png) no-repeat 10px 50%;
+border-top: 3px solid #629DE3;
+border-bottom: 3px solid #629DE3;
+}
+#system-message dt.message { 
+display: none; 
+}
+#system-message dd.message {}
+#system-message dt.error { 
+display: none; 
+}
+#system-message dd.error ul {
+color: #c00;
+margin: 0px;
+list-style: none;
+background: #FFD6D6 url(../images/status-alert.png) no-repeat 10px 50%;
+border-top: 3px solid #DE7A7B;
+border-bottom: 3px solid #DE7A7B;
+}
+#system-message dt.notice { 
+display: none; 
+}
+#system-message dd.notice ul {
+color: #DCA33C;
+margin: 0px;
+list-style: none;
+background: #FEF6D8 url(../images/status-note.png) no-repeat 10px 50%;
+border-top: 3px solid #F0DC7E;
+border-bottom: 3px solid #F0DC7E;
+}
+/*Default Joomla Styles*/
+.contentpaneopen{
+/*font-size: 16px;
+letter-spacing: 4px;*/
+width:95%;
+margin-left: 30px;
+}
+.poll {
+width: 100%;
+}
+.pollstableborder {
+width: 100%;
+text-align: left;
+margin-bottom: 10px;
+}
+.poll input {
+margin: 2px;
+}
+
+div.moduletable {
+margin-bottom: 2px;      /* banner group , although the setting show "bottom", both top & bottom change same time   */
+
+}
+div.moduletable_menu {
+margin-bottom: 1px;
+}
+ul.pagination {
+margin: 0px;
+padding: 0px;
+list-style-type: none;
+}
+ul.pagination li {
+display: inline;
+padding-right: 3px;
+padding-left: 3px;
+}
+
+#whitebox {
+/*	margin: 20 21px 20px 21px;
+	background: #fff;
+	width: auto;*/
+}
+
+#whitebox div {
+	text-align: left;
+}
+
+#whitebox_t {
+/*	background: #fff url(../images/mw_content_t.png) 0 0 repeat-x;*/
+}
+
+#whitebox_tl {
+/*	background: url(../images/mw_content_t_l.png) 0 0 no-repeat;*/
+}
+
+#whitebox_tr {
+/*	height: 10px;
+	overflow: hidden;
+	background: url(../images/mw_content_t_r.png) 100% 0 no-repeat;*/
+}
+
+#whitebox_m {
+/*	border-left: 1px solid #ccc;
+	border-right: 1px solid #ccc;
+	width: auto;
+	padding: 1px 8px;*/
+}
+
+#whitebox_b {
+/*	margin-top: -5px;
+	background: url(../images/mw_content_b.png) 0 100% repeat-x;*/
+}
+
+#whitebox_bl {
+/*	background: url(../images/mw_content_b_l.png) 0 100% no-repeat;*/
+}
+
+#whitebox_br {
+/*	height: 13px;
+	background: url(../images/mw_content_b_r.png) 100% 100% no-repeat;*/
+}
+

@@ -3,18 +3,52 @@
         <title>Recipes</title>
         <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
         <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-route.js"></script>
-        <script src="js/user.js"></script>
-        <script src="js/recipe.js"></script>
-        <script src="js/favourList.js"></script>
+        <script src="js/controller.js"></script>
+
+
+        <!--THIS IS UI-->
+        <script type="text/javascript" src="ui_js/jssor.js"></script>
+        <script type="text/javascript" src="ui_js/jssor.slider.js"></script>
+        <script type="text/javascript" src="ui_js/mootools.js"></script>
+        <script class="jsbin" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+        <script type="text/javascript" src="ui_js/caption.js"></script>
+        <link rel="stylesheet" href="css/general.css" type="text/css">
+        <link rel="stylesheet" href="css/a.css" type="text/css">
+        <link rel="stylesheet" href="css/theme.css" type="text/css">
+        <link rel="stylesheet" href="css/drop-down.css" />
+        <style type="text/css">#mainbody{width:100%}</style>
+        <style type="text/css">#sidebar{float:left;} #content{float:right;}</style>
+        <style type="text/css">body {color:#333333;}</style>
+        <style type="text/css">h1, .componentheading, h3{color:#996633;}</style>
+        <script type="text/javascript" src="ui_js/exif.js"></script>
     </head>
 
     <body>
-        <ul>
-            <li><a href="#/login">Login</a></li>
-            <li><a href="#/register">Register</a></li>
-            <li><a href="#/search">Search</a></li>
-            <li><a href="#/favourList">Favourite List</a></li>
-        </ul>
-        <div ng-view></div>
+        <div class="inside">
+            <img src="pic/logo.png"/>
+        </div>
+        <div id="jp-left">
+            <div class="moduletable_menu">
+                <ul class="menu">
+                    <li><a href="#/mainPage"><h1>Main</h1></a></li>
+                    <li><a href="#/search"><h1>Search</h1></a></li>
+                    <li><a href="#/favourList"><h1>Favourite List</h1></a></li>
+                    <li><a href="#/login"><h1>Login</h1></a></li>
+                    <li><a href="#/register"><h1>Register</h1></a></li>
+                </ul>
+            </div>
+        </div>
+        <div id="content">
+            <table class="blog" cellpadding="0" cellspacing="0">
+                <tbody>
+                    <tr>
+                        <td valign="top">
+                            <!--THISSTART-->
+                            <div ng-view></div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
     </body>
 </html>
