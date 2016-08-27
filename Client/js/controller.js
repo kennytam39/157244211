@@ -27,7 +27,7 @@ myRecipe.config(function ($routeProvider) {
                 templateUrl: "Template/FavourListItem.html"
             })
             .otherwise({
-                redirectTo: '/search'
+                redirectTo: '/mainPage'
             });
 });
 
