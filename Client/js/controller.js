@@ -17,7 +17,7 @@ myRecipe.config(function ($routeProvider) {
             .when("/search", {
                 templateUrl: "Template/Search.html"
             })
-            .when("/recipeDetails", {
+            .when("/recipeDetails", { 
                 templateUrl: "Template/RecipeDetails.html"
             })
             .when("/favourList", {
