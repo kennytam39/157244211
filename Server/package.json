@@ -1,0 +1,21 @@
+{
+  "name": "recipe_server",
+  "version": "1.0.1",
+  "description": "A restful server",
+  "main": "server.js",
+  "author": "kenny <kt3987@gmail.com>",
+  "dependencies": {
+    "express": "4.12.0",
+    "frisby": "0.8.5",
+    "nano": "6.2.0",
+    "restify": "4.1.1"
+  },
+  "scripts": {
+    "start": "node server.js"
+  },
+  "devDependencies": {},
+  "license": "UNLICENSED",
+  "keywords": [
+    "test"
+  ]
+}
